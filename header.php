@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package isidore
+ * @package eye4group
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'isidore' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'eye4group' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		
@@ -41,15 +41,46 @@
 		?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'isidore' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'main-menu',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+		
+
+		<?php 
+			if ( is_page_template('landing-page.php') ) :
+				if( have_rows('section' , $id ) ): ?>
+					<nav class="main-navigation">
+				 	<ul class="menu nav-menu" aria-expanded="false">
+				 	
+				 	<?php // loop through the rows of data
+				   	 while ( have_rows('section' , $id ) ) : the_row();
+				    	$section_title = get_sub_field('section_title');
+				    	$section_title_id = str_replace(' ', '-', $section_title); ?>
+
+			    		<li id="menu-item-181" class="menu-item ">
+			    			<a href="#<?php echo $section_title_id; ?>">
+				    			<?php echo $section_title; ?>
+				    		</a>
+				    	</li>
+					<?php
+				    endwhile;?>
+
+				    </ul>
+				    </nav>
+
+				<?php endif; ?>
+
+				<?php
+			else :
+				?>
+				<nav id="site-navigation" class="main-navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'eye4group' ); ?></button>
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'main-menu',
+						'menu_id'        => 'primary-menu',
+					) );
+					?>
+				</nav><!-- #site-navigation -->
+		<?php
+			endif; ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

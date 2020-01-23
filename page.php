@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package isidore
+ * @package eye4group
  */
 
 get_header();

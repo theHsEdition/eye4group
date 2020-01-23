@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package isidore
+ * @package eye4group
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses isidore_header_style()
+ * @uses eye4group_header_style()
  */
-function isidore_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'isidore_custom_header_args', array(
+function eye4group_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'eye4group_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'isidore_header_style',
+		'wp-head-callback'       => 'eye4group_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'isidore_custom_header_setup' );
+add_action( 'after_setup_theme', 'eye4group_custom_header_setup' );
 
-if ( ! function_exists( 'isidore_header_style' ) ) :
+if ( ! function_exists( 'eye4group_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see isidore_custom_header_setup().
+	 * @see eye4group_custom_header_setup().
 	 */
-	function isidore_header_style() {
+	function eye4group_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

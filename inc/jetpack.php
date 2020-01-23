@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package isidore
+ * @package eye4group
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function isidore_jetpack_setup() {
+function eye4group_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'isidore_infinite_scroll_render',
+		'render'    => 'eye4group_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function isidore_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'isidore-style',
+			'stylesheet' => 'eye4group-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function isidore_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'isidore_jetpack_setup' );
+add_action( 'after_setup_theme', 'eye4group_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function isidore_infinite_scroll_render() {
+function eye4group_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

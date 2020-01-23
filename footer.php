@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package isidore
+ * @package eye4group
  */
 
 ?>
@@ -16,13 +16,7 @@
 	<footer id="colophon" class="site-footer panel-color">
 		<div class="footer-container sizer">
 			<div class="site-info">
-				<img src="/wp-content/uploads/2019/12/exports_st-isidore-logo-no-border.png" alt="St. Isidore Farms">
-				<h3 class="x-margin">St. Isidore Farms</h3>
-				<p>Tennesee Grassfed Lamb</p>
-				<p>1084 Perry Rd.<br>
-					Manchester, TN<br>
-					37355</p> 
-				<p>&copy; <?php echo date('Y'); ?> St. Isidore Farms, LLC</p>
+				<p>&copy; <?php echo date('Y'); ?> Eye4Group</p>
 			</div>
 
 			<nav class="footer-nav">
