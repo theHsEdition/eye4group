@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package eye4group
+ * @package skytheme
  */
 
 get_header();
@@ -32,7 +32,7 @@ get_header();
 			</style>
 
 			
-				<header class="hero bg-image" style="background-image: url('<?php echo eye4group_header_image($post); ?>');">
+				<header class="hero bg-image" style="background-image: url('<?php echo skytheme_header_image($post); ?>');">
 					<div class="sizer">
 						<div class="header-home-content">
 							<h1 class="x-margin">Discover. Create. Implement.</h1>

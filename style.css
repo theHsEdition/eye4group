@@ -1,5 +1,5 @@
 /*!
-Theme Name: eye4group
+Theme Name: skytheme
 Theme URI: http://underscores.me/
 Author: Skymouse Studios
 Author URI: https://SkymouseStudios.com
@@ -7,13 +7,13 @@ Description: Description
 Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: eye4group
+Text Domain: skytheme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-eye4group is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+skytheme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -1016,7 +1016,7 @@ section {
 .bg-image {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("https://eye4group.skymse/wp-content/uploads/2020/01/cropped-eye4group-truck.png");
+	background-image: url("https://skytheme.skymse/wp-content/uploads/2020/01/cropped-skytheme-truck.png");
 	z-index: 0;
 	position: relative;
 }

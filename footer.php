@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package eye4group
+ * @package skytheme
  */
 
 ?>
@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer panel-color">
 		<div class="footer-container sizer">
 			<div class="site-info">
-				<p>&copy; <?php echo date('Y'); ?> Eye4Group</p>
+				<p>&copy; <?php echo date('Y'); ?> skytheme</p>
 			</div>
 
 			<nav class="footer-nav">
