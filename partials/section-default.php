@@ -22,7 +22,7 @@
 						<img src="<?php echo $section_image['url']; ?>" alt="<?php echo $section_image['alt']; ?>" />
 					</div>
 				</div>
-				<div class="gallery gallery-columns-3">
+				<div class="gallery grid-third">
 					<?php
 					// Load value (array of ids).
 					$images = get_sub_field('section_gallery');

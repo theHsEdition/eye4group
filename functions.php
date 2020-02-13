@@ -161,6 +161,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function eye4group_header_image($post) { 
+  if ( has_post_thumbnail() ) {
+    $bannerimg = get_the_post_thumbnail_url( $post->ID, 'full') ;
+  
+  } else {
+    $bannerimg = get_stylesheet_directory_uri() . '/library/images/bg/pattern.svg';
+  }
+
+  return $bannerimg;
+}
+
 /**
  * Homepage Section Generator. (Grabs the data from the homepage, instead of the current page)
  */

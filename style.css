@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Skymouse Studios
 Author URI: https://SkymouseStudios.com
 Description: Description
-Version: 1.0.0
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: eye4group
@@ -546,10 +546,6 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: none;
-	/*background: #e6e6e6;*/
-	/*color: rgba(0, 0, 0, 0.8);*/
-	/*font-size: 14px;
-	line-height: 1;*/
 	padding: 0.8em 1.5em;
 	text-decoration: none;
 	cursor: pointer;
@@ -591,8 +587,9 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: #666;
-	padding: 3px;
+	padding: 0.8em 1.5em;
 	border: none;
+	border-radius: 5px;
 }
 
 input[type="text"]:focus,
@@ -686,8 +683,13 @@ a:hover, a:active {
 	outline: 0;
 }
 
+:root {
+  --main-color: red;
+}
+
+
 .button-primary {
-	background-color: #f78320;
+	background-color: var(--main-color);;
 	color: white !important;
 	transition: 0.2s;
 	font-weight: 800;
@@ -695,7 +697,7 @@ a:hover, a:active {
 
 .button-primary:hover {
 	transition: 0.5s;
-	background-color: #f59f56;
+	background-color: var(--main-color);;
 	text-shadow: 0px 5px 6px #29292963;
 }
 
@@ -716,7 +718,7 @@ a:hover, a:active {
 }
 
 .main-navigation li:hover {
-	background-color: #f78320;
+	background-color: var(--main-color);;
 	transition: 0.5s;
 }
 
@@ -751,7 +753,7 @@ a:hover, a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
-	border-right: #f78320 solid 2px;
+	border-right: solid 2px var(--main-color);
     padding-right: 10px;
     padding: 0px 20px;
     color: white;
@@ -764,7 +766,7 @@ a:hover, a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	font-family: "Avenir";
+	font-family: "Avenir" sans-serif;
 	color: white;
 }
 
@@ -997,8 +999,8 @@ section {
 }
 
 .header-home-content p {
-	font-size: 2em;
-	margin-bottom: 30px;
+	font-size: 1.5em;
+	margin-bottom: 0px;
 	text-align: center;
 	color: white;
 	max-width: 500px;
@@ -1062,10 +1064,10 @@ section {
 
 /* Case Study Line */
 .case-studies .title {
-	background-color: grey;
-	color: white;
+	background-color: #EFEFEF;
 	padding: 10px 0;
 	text-align: center;
+	border-radius: 10px;
 }
 
 .primary {
@@ -1085,11 +1087,14 @@ section {
 }
 
 .panel-cta-large {
-	padding: 200px 0px;
 	text-align: center;
-	margin: 20px auto;
-	width: 100%;
-	background-color: #efefef;
+	margin-bottom: 200px;
+}
+
+.panel-cta-large .line {
+	width: 30%;
+	margin: 100px auto;
+	border-radius: 4px;
 }
 
 .site-footer {
@@ -1138,6 +1143,26 @@ section {
 	padding: 0.8em 1.5em;
     width: 300px;
     margin: 0 auto;
+}
+
+.line {
+	height: 5px;
+	background-color: var(--main-color);
+	width: 70%;
+	text-align: left;
+	margin-left: 0px;
+}
+
+.page-template-landing-page .wpcf7-form {
+	max-width: 600px;
+	margin: 0 auto 100px auto;
+	background: #efefef;
+	padding: 20px 40px;
+	border-radius: 10px;
+}
+
+.page-template-landing-page .wpcf7-submit {
+	color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1244,16 +1269,16 @@ object {
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
-	
+	grid-gap: 5px;
+	grid-template-rows: 250px;
+	overflow: hidden;
 }
 
 .gallery-item {
 	display: block;
 	text-align: center;
-	vertical-align: top;
 	width: 100%;
-	float: left;
-	padding: 2.5px;
+	object-fit: cover;
 }
 
 .gallery-columns-2 .gallery-item {
@@ -1356,7 +1381,6 @@ DESKTOP
 	.image-container {
 		width: 100%;
 	}
-
 }   
 
 /*********************
