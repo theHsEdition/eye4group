@@ -1,0 +1,24 @@
+/******************************************************************
+1240px NS UP - Super Large Monitor Stylesheet
+******************************************************************/
+ 
+p {
+	font-size: 1em;
+}
+
+#page, #inner-header, #product, .home-hero {
+	width: 1240px;
+}
+
+.header-image {
+	top: 0px;
+
+	img {
+		width: 100%;
+	}
+}
+
+footer {
+	margin: 40px auto;
+	max-width: 1240px;
+}

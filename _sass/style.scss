@@ -1,0 +1,69 @@
+/*!
+Theme Name: skytheme
+Theme URI: http://underscores.me/
+Author: Skymouse Studios
+Author URI: https://SkymouseStudios.com
+Description: Description
+Version: 1.1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: skytheme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+skytheme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+// normalize: http://necolas.github.io/normalize.css/
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/functions";
+@import "partials/grid";
+
+/*********************
+IMPORTING MODULES
+*********************/
+
+@import "modules/buttons";
+@import "modules/forms";
+
+/*********************
+BASE (MOBILE) SIZE
+*********************/
+
+@import "breakpoints/base";
+
+/*********************
+TABLET & SMALLER LAPTOPS
+*********************/
+@media only screen and (min-width: 768px) {
+	// styles in 768up.scss
+	@import "breakpoints/768up";
+}   // end of media query
+
+/*********************
+DESKTOP
+*********************/
+@media only screen and (min-width: 1030px) {
+	// styles in 1030up.scss
+	@import "breakpoints/1030up";
+}   // end of media query
+
+/*********************
+LARGE VIEWING SIZE
+*********************/
+@media only screen and (min-width: 1240px) {
+	// styles in 1240up.scss
+	@import "breakpoints/1240up";
+} // end of media query
+
+/*********************
+PRINT STYLESHEET
+*********************/
+@media print {
+	// styles in print.scss
+	@import "partials/print";
+}

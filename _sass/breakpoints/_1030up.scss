@@ -1,0 +1,105 @@
+/******************************************************************
+1030px and up - Desktop Stylsheet
+******************************************************************/
+ 
+p {
+	font-size: 1em;
+}
+
+/*****************/
+/* LAYOUT Styles */
+/******************/
+
+.wrap {
+}
+
+#page, #inner-header, #product, #Checkout, .home-hero {
+	width: 1000px;
+}
+
+#page {
+	margin-top: 150px;
+}
+
+/*****************/
+/* HEADER */
+/******************/
+
+
+/*********************
+TEMPLATE OBJECTS
+*********************/
+
+.arrow {
+	z-index: 55;
+	top: 30%;
+	transform: rotate(0deg);
+}
+
+#menu-burger, {
+	display: none;
+}
+
+#inner-header nav {
+	
+	&#desktop-menu {
+		display: block;
+
+		ul li:last-child {
+			float: right;
+			
+			a {
+				background-color: $orange;
+			}
+			
+		}
+	}
+
+	&#mobile-menu {
+		display: none;
+	}
+}
+
+img.client-site {
+	right: 110px;
+}
+
+.quote {
+	font-size: 2.3em;
+	line-height: 1.5em;
+	margin-top: 0em;
+	padding-right: 20px;
+}
+
+.twitter-box {
+	border-radius: 5px;
+	border: 1.5px solid $gray;
+	padding: 15px;
+	font-family: $sans-serif;
+	padding: 20px;
+	color: $black;
+	position: relative;
+	background-color: white;
+	box-shadow: 37.2px 62.5px 125px -25px rgba(50,50,93,.5),22.3px 37.5px 75px -37.5px rgba(0,0,0,.6);
+	transform: translate(50%, -30%) rotate3d(0.32, -0.94, 0, 2deg) rotate(2.2deg);
+	-webkit-transform: translate(50%, -30%) rotate3d(0.32, -0.94, 0, 2deg) rotate(2.2deg);
+	
+	&:nth-child(odd) {
+		transform: translate(60%, -35%) rotate3d(0.32, -0.94, 0, 2deg) rotate(-2.2deg);
+		-webkit-transform: translate(60%, -35%) rotate3d(0.32, -0.94, 0, 2deg) rotate(-2.2deg);
+	}
+}
+
+.twitter-heading {
+	margin-bottom: 235px;
+}
+
+.footer-links {
+	p:first-child {
+		float: left;
+	}
+
+	p:last-child {
+		float: right;
+	}
+}

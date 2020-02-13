@@ -32,12 +32,22 @@ get_header();
 			</style>
 
 			
-				<header class="hero bg-image" style="background-image: url('<?php echo skytheme_header_image($post); ?>');">
+				<header class="hero" style="background-image: url('<?php echo skytheme_header_image($post); ?>');">
 					<div class="sizer">
 						<div class="header-home-content">
-							<h1 class="x-margin">Discover. Create. Implement.</h1>
-							<p>Enter your email address to download our multi-tenant visual catalogue.</p>
-							<?php get_template_part('partials/element-mailchimp-signup'); ?>
+							<?php 
+								$callout_cta_text = get_field('callout_cta_text');
+								$callout_cta_link = get_field('callout_cta_link');
+								$callout_title = get_field('callout_title');
+								$callout_subtitle = get_field('callout_subtitle');
+								$callout_icon = get_field('callout_icon');
+							?>
+
+
+							<h1 class="x-margin"><?php echo $callout_title; ?></h1>
+							<p><?php echo $callout_subtitle; ?></p>
+
+							<a class="button" href="<?php echo $callout_cta_link; ?>"><?php echo $callout_cta_text; ?></a>
 						</div>
 					</div>
 				</header>

@@ -1,0 +1,41 @@
+/******************************************************************
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+$tan:               #eceee5;
+
+$green:             #7dd667;
+
+$link-hover:        #fff;
+$link-color:        darken(#fff, 9%);
+
+$border-color:      #ccc;
+$disabled-gray:     #cfcfcf;
+
+/*********************
+SKYMSE Colors
+*********************/
+
+$black:             #4A4A4A;
+$white:             #fff;
+
+$gray: 			    #817F82;
+$orange:			#F99C1C;
+$lblue: 			#70C1DB;
+$dblue: 			#5c9ead;
+$cheese: 			#FCD0A1;
+$midnight:			#434d5a;
+
+$lgray:				#EEEEEE;
+$ygray: 			#F7F7F1;
+
+$light-gray:        #f8f9fa;
+
+$radius:			10px;
+$radius-sm:			3px;

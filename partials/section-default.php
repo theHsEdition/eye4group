@@ -24,11 +24,17 @@
 				</div>
 				<div class="gallery grid-third">
 					<?php
-					// Load value (array of ids).
+					
 					$images = get_sub_field('section_gallery');
+					if ( $images ):
+					// Load value (array of ids).
+					
 						foreach( $images as $image ): ?>
 							<img class="gallery-item" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-					<?php endforeach; ?>
+					<?php endforeach; 
+
+					endif; 
+					?>
 				</div>
 			</div>
 		</section>
