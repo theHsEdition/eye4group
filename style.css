@@ -590,6 +590,7 @@ textarea {
 	padding: 0.8em 1.5em;
 	border: none;
 	border-radius: 5px;
+	width: 100%;
 }
 
 input[type="text"]:focus,
@@ -1397,3 +1398,24 @@ LARGE VIEWING SIZE
 		margin-right: auto;
 	}
 } 
+
+/*Customizer things*/
+
+.site-title {
+	display: none;
+}
+
+ @media only screen and (max-width: 600px) {
+
+#mc_embed_signup_scroll {
+	text-align: left;
+}
+
+#mc_embed_signup_scroll input[type=submit] {
+	margin-top: 20px;
+}
+	 
+	 .button {
+		 padding-top: 20px;
+	 }
+}
