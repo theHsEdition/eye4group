@@ -17,7 +17,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_1030up.css",
+		"oAP": "/breakpoints/_1030up.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -30,7 +30,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_1240up.css",
+		"oAP": "/breakpoints/_1240up.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -43,7 +43,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_768up.css",
+		"oAP": "/breakpoints/_768up.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -56,7 +56,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_base.css",
+		"oAP": "/breakpoints/_base.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -69,7 +69,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_buttons.css",
+		"oAP": "/modules/_buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -82,7 +82,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_forms.css",
+		"oAP": "/modules/_forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -95,7 +95,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_functions.css",
+		"oAP": "/partials/_functions.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -108,7 +108,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_grid.css",
+		"oAP": "/partials/_grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -121,7 +121,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_normalize.css",
+		"oAP": "/partials/_normalize.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -134,7 +134,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_print.css",
+		"oAP": "/partials/_print.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -147,7 +147,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_typography.css",
+		"oAP": "/partials/_typography.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -160,7 +160,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/_variables.css",
+		"oAP": "/partials/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -185,9 +185,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "/css/wp-style.css",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "/wp-style.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		}
@@ -497,7 +497,7 @@
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 0,
 	"buildFolderName": "build",
-	"cleanBuild": 1,
+	"cleanBuild": 0,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
 			"active": 0,
@@ -1680,7 +1680,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http://localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
@@ -2200,7 +2200,7 @@
 		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,

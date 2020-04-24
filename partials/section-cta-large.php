@@ -1,9 +1,4 @@
-<section class="panel-cta-large">
-	<hr class="line">
-	<h2>Redefine your curb appeal</h2>
-	<h4>Get ballpark pricing for your next project.</h4>
-
-	<div>
-		<a class="button button-primary" href="#Contact">Know Your Sign Budget</a>
-	</div>
+<section class="block inside-pad pad">
+	<h2>It's super easy.</h2>
+	<a class="button btn-dark overlap-element" href="#Contact">Create an Account</a>
 </section>

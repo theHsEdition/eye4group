@@ -76,14 +76,14 @@ Stylesheet: Typography
 /* --- FONT STACK ---  */
 
 $sans-serif:        "Rubik", Helvetica, Arial, sans-serif;
-$serif:             "Rubik", Cambria, Times New Roman, Times, serif;
+$serif:             "Playfair Display", Cambria, Times New Roman, Times, serif;
 
 /* some nice typographical defaults */
 
-p, ul, li {
-  font-size: 1em;
+p, ul, li, a {
+  font-size: 1.2em;
   line-height: 2em;
-  font-weight: 300;
+  font-weight: 400;
   -ms-word-wrap: break-word;
   word-break: break-word; //non-standard css for webkit
   word-wrap: break-word;
@@ -107,15 +107,16 @@ p, ul, li {
 /* --- HEADER STYLING --- */
 
 h1, .h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   color: $black;
-  font-family: $sans-serif;
-  font-weight: 500;
+  font-family: $serif;
+  font-weight: 800;
   margin: 0;
 }
 
 h2, .h2 {
-  font-weight: 500;
+  font-family: $serif;
+  font-weight: 800;
   font-size: 2.2em;
   margin: 0;
   color: $black;
@@ -123,9 +124,9 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.8em;
-  font-family: $sans-serif;
+  font-family: $serif;
   color: $black;
-  font-weight: 200;
+  font-weight: 800;
   display: inline-block;
   margin: 0;
 }
@@ -135,7 +136,6 @@ h4, .h4 {
   font-family: $sans-serif;
   font-weight: 200;
   font-size: 20px;
-  // background-color: white; What do I need this for?
   z-index: 2;
 }
 
@@ -161,6 +161,7 @@ blockquote p {
 
 .subtitle {
   font-size: 1.5em;
+  line-height: 1.6;
   color: $black;
   margin: 0;
 }
@@ -224,4 +225,12 @@ ul.list {
 .tag-red {
   border-color: red;
   color: red;
+}
+
+.highlight-yellow {
+  background-color: $yellow;
+}
+
+.text-red {
+  color: $red;
 }

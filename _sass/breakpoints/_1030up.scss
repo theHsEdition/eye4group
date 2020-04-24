@@ -1,7 +1,11 @@
 /******************************************************************
 1030px and up - Desktop Stylsheet
 ******************************************************************/
- 
+
+h1 {
+	font-size: 4em;
+}
+
 p {
 	font-size: 1em;
 }
@@ -13,12 +17,8 @@ p {
 .wrap {
 }
 
-#page, #inner-header, #product, #Checkout, .home-hero {
+#content, .site-header, #product, #Checkout, .home-hero {
 	width: 1000px;
-}
-
-#page {
-	margin-top: 150px;
 }
 
 /*****************/

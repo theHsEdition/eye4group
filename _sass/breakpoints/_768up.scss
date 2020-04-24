@@ -10,7 +10,11 @@ body {
 	font-size: 16px;
 }
 
-#page, #inner-header, #product, #Checkout {
+p, ul, ol, a, li {
+	font-size: 1em;
+}
+
+#content, .site-header, #product, #Checkout {
 	width: 800px; // set content width
 	margin: 0 auto; // center content in page
 }
@@ -34,10 +38,9 @@ body {
 	}
 }
 
-p {
-	font-size: 1em;
+.page-template-page-login #content {
+	width: 100%;
 }
-
 /*********************
 HEADER STYLES
 *********************/
@@ -52,7 +55,6 @@ HEADER STYLES
 }
 
 .home-hero {
-	//max-width: 650px;
 	margin: 0 auto;
 	margin-top: 80px;
 }
@@ -192,13 +194,25 @@ section {
 	right: -230px;
 }
 
-.grid-half:nth-child(odd) {
+.grid-half {
+	.content {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.primary {
+		grid-column: 1;
+		grid-row: 1;
+	}
+}
+
+.panel-display:nth-child(odd) .grid-half {
 	.content {
 	 	grid-column: 1;
 		grid-row: 1;
 	 }
 
-	.client-site {
+	.client-site, .primary {
 		grid-column: 2;
 		grid-row: 1;
 
@@ -207,6 +221,15 @@ section {
     		top: -41px;
 		}
 	}
+}
+
+.panel-alt:last-child .grid-half {
+	grid-template-columns: 1fr 1fr 1fr !important;
+
+	.content {
+	 	grid-column: 2;
+		grid-row: 1;
+	 }
 }
 
 .mobile-and-desktop {

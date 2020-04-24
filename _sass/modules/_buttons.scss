@@ -109,7 +109,7 @@ Stylesheet: Button Styles
   }
 }
 
-.nav-btn {
+.btn-nav {
   @extend %btn;
   border-bottom: 3px solid $orange;
 
@@ -118,26 +118,32 @@ Stylesheet: Button Styles
   }
 }
 
-.orange {
+.button {
+  padding: 12px 10px;
+  color: white;
   background-color: $orange;
-}
-
-
-.ygray {
-  background-color: $ygray;
-  color: $gray;
-}
-
-.orange-btn {
-  display: inline-block;
-  margin: 5px;
-  padding: 5px;
+  box-shadow: 1px 5px 10px rgba(5,5,5,.2);
+  transition: 0.25s;
+  text-decoration: none;
+  text-align: center;
   border-radius: 5px;
-  box-shadow: 2px 2px 20px -10px #a2a2a2;
-  transition: 0.5s;
-  border: double 4px transparent;
-  background-color: $orange;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ef6500,#feb13e);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  border: none;
+  font-weight: 400;
+  display: inline-block;
+
+  &:hover {
+    box-shadow: 1px 10px 10px rgba(5,5,5,.2);
+    transition: 0.25s;
+    color: white;
+    background-color: lighten($orange, 7%);
+  }
+}
+
+.btn-dark {
+  color: white;
+  background-color: $midnight;
+
+  &:hover {
+    background-color: lighten($midnight, 10%);
+  }
 }

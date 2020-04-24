@@ -184,14 +184,16 @@ function home_section( $section_name ) {
 	include( locate_template( '/partials/section-' . $section_name . '.php', false ) ); 
 }
 
-
 /**
  * Disable all widgets by default
  */
 
-   add_filter( "sidebars_widgets", "disable_all_widgets" ); 
-   function disable_all_widgets( $sidebars_widgets ) 
-   { 
-      if ( is_home() ) $sidebars_widgets = array( false ); 
-      return $sidebars_widgets; 
-   } 
+	add_filter( 'sidebars_widgets', 'disable_all_widgets' );
+	
+	function disable_all_widgets( $sidebars_widgets ) {
+		if ( is_home() )
+			$sidebars_widgets = array( false );
+		return $sidebars_widgets;
+	}
+
+	?>
